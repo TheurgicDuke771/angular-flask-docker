@@ -1,0 +1,27 @@
+version: '3.5'
+
+services:
+  angular-service: # The name of the service
+    container_name: angularcontainer  # Container name
+    build: ./flask_frontend_angular # Location of our Dockerfile
+    volumes: # Volume binding
+      - './flask_frontend_angular:/usr/src/app' 
+    ports: 
+      - '4200:4200' # Port mapping host:container
+    command: > 
+      bash -c "npm install && ng serve --host 0.0.0.0 --port 4200"
+
+  flask_blog-service:
+    build: ./flask_blog
+    volumes:
+      - ./flask_blog:/app
+    ports:
+      - 8080:8080
+
+  flask-todo-service:
+    build: ./flask-todo
+    volumes:
+      - ./flask-todo:/app
+    ports:
+      - 8081:8081
+

@@ -1,0 +1,28 @@
+# Angular
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+node_modules/
+bower_components/
+
+# IDEs and editors
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+envs/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
