@@ -7,7 +7,7 @@ Each application is dockerized, and then run simultaneously using Docker compose
 ### Usage
 Install Docker engine and docker-compose [Ignore if already installed].  
 Clone the repo.  
-Open erminal in project root directory.  
+Open terminal in project root directory.  
 Execute the command `docker-compose up -d`  
 Open a browser and nevigate to `localhost:4200`
 ***
