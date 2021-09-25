@@ -39,7 +39,10 @@ jobs:
 
       - name: Build and push
         id: docker_build
-        run: docker-compose up --build && docker-compose down && docker-compose push
+        run: |
+          docker-compose up --build -d
+          docker-compose push
+          docker-compose down
         
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
