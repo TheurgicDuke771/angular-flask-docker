@@ -6,7 +6,7 @@ services:
     container_name: angularcontainer  # Container name
     build: ./flask_frontend_angular # Location of our Dockerfile
     volumes: # Volume binding
-      - './flask_frontend_angular:/usr/src/app' 
+      - './flask_frontend_angular:/app' 
     ports: 
       - '4200:4200' # Port mapping host:container
     command: > 
