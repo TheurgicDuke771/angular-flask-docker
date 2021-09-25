@@ -41,6 +41,7 @@ jobs:
         id: docker_build
         run: |
           docker-compose up --build
+          docker-compose down
           docker-compose push
         
       - name: Image digest
