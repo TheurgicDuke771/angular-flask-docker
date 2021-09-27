@@ -1,5 +1,6 @@
 # Flask Based Microservice
-[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/TheurgicDuke771/angular-flask-docker)  
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/TheurgicDuke771/angular-flask-docker) 
+[![CI to Docker Hub](https://github.com/TheurgicDuke771/angular-flask-docker/actions/workflows/main.yml/badge.svg)](https://github.com/TheurgicDuke771/angular-flask-docker/actions/workflows/main.yml)  
 ### Description
 This is a simple microservice example.  
 Created using 2 Flask application and Frontend using Angular.  
